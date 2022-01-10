@@ -1,0 +1,71 @@
+@import "../../styles/topography";
+@import "../../styles/colors";
+
+.Landing {
+  height: 90vh;
+  background: url(../../assets/svgs/backgrounds/hero-bg.svg) no-repeat;
+  background-size: 100%;
+
+  &_container {
+    @include gridDisplay(center, repeat(auto-fit, minmax(280px, 1fr)));
+    padding-top: 5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &_content {
+    &_social {
+      margin-top: 2rem;
+
+      &_link {
+        font-size: 28px;
+
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+
+        & > svg {
+          stroke: inherit;
+        }
+      }
+    }
+    &_description {
+      & > h1 {
+        font-weight: 700;
+        font-size: 38px;
+        font-family: "Eczar", serif;
+        letter-spacing: 2.5px;
+      }
+
+      & > h2 {
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 24px;
+      }
+
+      & > h3 {
+        opacity: 60%;
+      }
+    }
+  }
+
+  &_btn {
+    margin-top: 10rem;
+    background: linear-gradient(to right, $blue-2, $blue-3);
+    font-size: 1rem;
+    font-weight: 600;
+    color: $white-1;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &_imgContainer {
+    background: $blue-3;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0 10px #2f2f30;
+  }
+}

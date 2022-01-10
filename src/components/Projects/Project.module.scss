@@ -1,0 +1,17 @@
+@import "../../styles/topography";
+@import "../../styles/colors";
+
+.Project {
+  background: url(../../assets/svgs/backgrounds/layered-waves-haikei.svg)
+    no-repeat;
+  background-size: 100%;
+  padding: 3rem 0;
+
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &_header {
+    @include sectionHeader;
+  }
+}

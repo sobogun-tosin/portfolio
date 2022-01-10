@@ -1,0 +1,54 @@
+@import "../../styles/topography";
+@import "../../styles/colors";
+
+.Qualification {
+  margin: 3rem 0;
+  &_container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  &_header {
+    @include sectionHeader;
+  }
+
+  &_tab {
+    &_header {
+      @include flexDisplay(center);
+    }
+
+    &_item {
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 14px 32px;
+      background: $blue-1;
+      font-weight: 600;
+      font-size: 1rem;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+
+      & > svg {
+        padding-right: 5px;
+      }
+    }
+
+    &_active {
+      background: $blue-2;
+    }
+
+    &_content {
+      margin-top: 2rem;
+      height: 350px;
+      padding: 14px 32px;
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px 0 $grey-1;
+
+      &_item {
+        @include flexDisplay(space-between);
+        font-size: 1.25rem;
+        font-family: "Eczar", serif;
+      }
+    }
+  }
+}

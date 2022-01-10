@@ -1,0 +1,76 @@
+// ==============Headings================
+@mixin heading-1 {
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: -0.39px;
+}
+@mixin heading-2 {
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.24px;
+}
+@mixin heading-3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: -0.12px;
+}
+@mixin heading-4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.28;
+  letter-spacing: -0.11px;
+}
+@mixin heading-5 {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.37;
+  letter-spacing: -0.09px;
+}
+
+// ==============Display================
+
+@mixin flexDisplay($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+@mixin gridDisplay($justify-content, $columns) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-gap: 10px;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+// ==============Section header================
+@mixin sectionHeader {
+  @include flexDisplay(center);
+  flex-direction: column;
+
+  & > h3 {
+    padding: 10px;
+    border-bottom: 5px solid $black-2;
+    border-radius: 6px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  & > p {
+    opacity: 50%;
+    font-weight: 600;
+  }
+}

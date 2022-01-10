@@ -1,0 +1,39 @@
+@import "../../styles/colors";
+@import "../../styles/topography";
+
+.Skills {
+  background: url(../../assets/svgs/backgrounds/layered-waves-haikei.svg)
+    no-repeat;
+  background-size: 100%;
+  padding: 3rem 0;
+
+  &_container {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  &_header {
+    @include sectionHeader;
+  }
+
+  &_content {
+    margin-top: 2rem;
+    font-family: cursive;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    box-shadow: 1px 1.5px 7px 2.5px $black-1;
+
+    &_item {
+      margin-bottom: 10px;
+
+      &_text {
+        @include flexDisplay(space-between);
+
+        & > i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
