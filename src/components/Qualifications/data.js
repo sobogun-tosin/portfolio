@@ -39,7 +39,16 @@ export const QUALIFICATIONS = [
     icon: <BsPalette />,
     contents: [
       {
-        name: "",
+        name: "Watching movies",
+      },
+      {
+        name: "Listening to music",
+      },
+      {
+        name: "Playing football",
+      },
+      {
+        name: "Watching animes",
       },
     ],
   },
