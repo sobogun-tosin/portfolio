@@ -1,9 +1,29 @@
 import React from "react";
+import styles from "./About.module.scss";
+import tosin from "../../assets/images/background/tosin.png";
 
 const About = () => {
   return (
-    <div>
-      <h3>About</h3>
+    <div className={styles.About}>
+      <div className={styles.About_header}>
+        <h3>About Tosin</h3>
+        <p></p>
+      </div>
+      <div className={styles.About_content}>
+        <p className={styles.About_content_description}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          hic quasi, perferendis vitae expedita, voluptates temporibus
+          reiciendis sunt excepturi quo ratione libero nulla nemo rem obcaecati
+          est soluta nihil ducimus quibusdam voluptas similique et illum! Itaque
+          magnam eius quasi quibusdam facere veritatis mollitia sapiente
+          incidunt aut? Adipisci accusamus voluptatibus neque!
+        </p>
+        <div className={styles.About_img_container}>
+          <div className={styles.About_img}>
+            <img src={tosin} alt="Tosin" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

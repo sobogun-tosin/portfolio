@@ -11,7 +11,7 @@ export const PROJECTS = [
     avatar: "",
     title: "bank transfer with paystack",
     git_url: "https://github.com/sobogun-tosin/bank-transfer-paystack",
-    site_url: "",
+    site_url: "#",
   },
   {
     avatar: "",

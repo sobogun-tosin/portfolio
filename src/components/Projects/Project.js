@@ -12,7 +12,35 @@ const Project = () => {
         </div>
         <div className={styles.Project_content}>
           {PROJECTS.map(({ title, git_url, site_url, avatar }, index) => {
-            return <div key={index}>{title}</div>;
+            return (
+              <div key={index} className={styles.Project_content_item}>
+                <img
+                  src={avatar}
+                  alt="avatar"
+                  className={styles.Project_content_img}
+                />
+                <hr />
+                <p className={styles.Project_content_title}>{title}</p>
+                <div className={styles.Project_content_links}>
+                  <a
+                    href={git_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.Project_content_links_btn}
+                  >
+                    Souce code
+                  </a>
+                  <a
+                    href={site_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.Project_content_links_btn}
+                  >
+                    Visit site
+                  </a>
+                </div>
+              </div>
+            );
           })}
         </div>
       </div>

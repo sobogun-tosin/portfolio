@@ -20,6 +20,7 @@ const Landing = () => {
                     key={id}
                     className={styles.Landing_content_social_link}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {icon}
                   </a>

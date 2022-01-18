@@ -39,6 +39,9 @@ export const QUALIFICATIONS = [
     icon: <BsPalette />,
     contents: [
       {
+        name: "Writing codes",
+      },
+      {
         name: "Watching movies",
       },
       {
