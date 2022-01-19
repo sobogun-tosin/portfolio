@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./About.module.scss";
 import tosin from "../../assets/images/background/tosin.png";
 
-const About = () => {
+const About = ({ id }) => {
   return (
-    <div className={styles.About}>
+    <div className={styles.About} id={id}>
       <div className={styles.About_header}>
         <h3>About Tosin</h3>
         <p></p>

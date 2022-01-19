@@ -15,7 +15,7 @@
     @include sectionHeader;
   }
   &_content {
-    @include gridDisplay(center, repeat(auto-fit, minmax(370px, 1fr)));
+    @include gridDisplay(repeat(auto-fit, minmax(370px, 1fr)));
     grid-gap: 20px;
 
     &_item {

@@ -6,7 +6,7 @@
   background: linear-gradient(to right, $blue-1, $grey-1);
 
   &_container {
-    @include gridDisplay(center, 1fr 2fr 1fr);
+    @include gridDisplay(1fr 2fr 1fr);
     align-items: stretch;
     width: 80%;
     margin: 0 auto;

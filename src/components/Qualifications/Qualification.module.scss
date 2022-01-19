@@ -2,10 +2,14 @@
 @import "../../styles/colors";
 
 .Qualification {
-  margin: 3rem 0;
+  padding: 3rem 0;
   &_container {
     width: 50%;
     margin: 0 auto;
+
+    @media screen and (max-width: 700px) {
+      width: 70%;
+    }
   }
   &_header {
     @include sectionHeader;

@@ -48,11 +48,11 @@
   align-items: center;
 }
 
-@mixin gridDisplay($justify-content, $columns) {
+@mixin gridDisplay($columns) {
   display: grid;
   grid-template-columns: $columns;
   grid-gap: 10px;
-  justify-content: $justify-content;
+  justify-content: center;
   align-items: center;
 }
 
