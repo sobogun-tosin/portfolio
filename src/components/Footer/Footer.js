@@ -9,6 +9,9 @@ const Footer = () => {
         <div className="">something</div>
         <div className="">Links</div>
       </div>
+      <div className="">
+        <p>holla copyright</p>
+      </div>
     </section>
   );
 };

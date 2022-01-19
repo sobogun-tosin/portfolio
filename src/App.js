@@ -8,15 +8,15 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <>
+    <main id="home">
       <Navbar />
       <Landing />
-      <About />
-      <Skills />
-      <Qualification />
-      <Project />
+      <About id="about" />
+      <Skills id="skills" />
+      <Qualification id="qualification" />
+      <Project id="projects" />
       <Footer />
-    </>
+    </main>
   );
 }
 

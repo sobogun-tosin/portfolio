@@ -2,12 +2,12 @@ import React from "react";
 import { SKILLS } from "./data";
 import styles from "./Skills.module.scss";
 
-const Skills = () => {
+const Skills = ({ id }) => {
   return (
-    <div className={styles.Skills}>
+    <div className={styles.Skills} id={id}>
       <div className={styles.Skills_container}>
         <div className={styles.Skills_header}>
-          <h3>My Skills</h3>
+          <h3>Skills</h3>
           <p>What I can do.</p>
         </div>
         <div className={styles.Skills_content}>

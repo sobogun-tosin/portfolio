@@ -3,10 +3,10 @@ import { QUALIFICATIONS } from "./data";
 import styles from "./Qualification.module.scss";
 import cx from "classnames";
 
-const Qualification = () => {
+const Qualification = ({ id }) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
   return (
-    <div className={styles.Qualification}>
+    <div className={styles.Qualification} id={id}>
       <div className={styles.Qualification_container}>
         <div className={styles.Qualification_header}>
           <h3>Qualifications</h3>

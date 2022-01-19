@@ -2,12 +2,12 @@ import React from "react";
 import { PROJECTS } from "./data";
 import styles from "./Project.module.scss";
 
-const Project = () => {
+const Project = ({ id }) => {
   return (
-    <div className={styles.Project}>
+    <div className={styles.Project} id={id}>
       <div className={styles.Project_container}>
         <div className={styles.Project_header}>
-          <h3>My Projects</h3>
+          <h3>Projects</h3>
           <p>My works so far</p>
         </div>
         <div className={styles.Project_content}>
