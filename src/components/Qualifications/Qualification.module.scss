@@ -17,7 +17,7 @@
 
   &_tab {
     &_header {
-      @include flexDisplay(center);
+      @include gridDisplay(repeat(auto-fit, minmax(300px, 1fr)));
     }
 
     &_item {

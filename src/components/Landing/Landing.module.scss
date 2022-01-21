@@ -3,14 +3,14 @@
 
 .Landing {
   background: url(../../assets/svgs/backgrounds/hero-bg.svg) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   &_container {
-    @include gridDisplay(repeat(auto-fit, minmax(280px, 1fr)));
+    @include gridDisplay(repeat(auto-fit, minmax(350px, 1fr)));
     padding: 2rem 0;
     width: 80%;
     margin: 0 auto;
-    min-height: 80vh;
+    min-height: 92vh;
   }
 
   &_content {
@@ -56,6 +56,13 @@
     font-weight: 600;
     color: $white-1;
     transition: all 0.5s linear;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: all 0.5s linear;
+    display: flex;
+    align-items: center;
+    width: max-content;
 
     &:hover {
       transform: scale(1.05);

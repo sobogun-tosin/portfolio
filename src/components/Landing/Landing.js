@@ -4,6 +4,17 @@ import { FiSend } from "react-icons/fi";
 import { SOCIAL_LINKS } from "./data";
 
 const Landing = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    const location = document.querySelector(target).offsetTop;
+
+    window.scrollTo({
+      left: 0,
+      top: location - 90,
+    });
+  };
+
   return (
     <section className={styles.Landing}>
       <div className={styles.Landing_container}>
@@ -27,9 +38,13 @@ const Landing = () => {
                 );
               })}
             </div>
-            <button className={styles.Landing_btn}>
-              Contact me <FiSend />{" "}
-            </button>
+            <a
+              href="#contact"
+              className={styles.Landing_btn}
+              onClick={handleClick}
+            >
+              Contact me <FiSend />
+            </a>
           </div>
         </div>
         <div className={styles.Landing_imgContainer}>

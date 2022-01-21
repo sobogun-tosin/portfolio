@@ -11,11 +11,11 @@
   }
 
   &_content {
-    @include flexDisplay(space-between);
+    @include gridDisplay(repeat(auto-fit, minmax(400px, 1fr)));
   }
 
   &_form {
-    width: 40%;
+    width: 90%;
 
     &_row {
       &:not(:last-of-type) {
@@ -59,7 +59,7 @@
   }
 
   &_img {
-    width: 50%;
+    width: 100%;
     opacity: 70%;
     border: 1px solid rgba($blue-1, 0.3);
     border-radius: 6px;

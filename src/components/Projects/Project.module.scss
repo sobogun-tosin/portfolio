@@ -4,7 +4,7 @@
 .Project {
   background: url(../../assets/svgs/backgrounds/layered-waves-haikei.svg)
     no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 3rem 0;
 
   &_container {
@@ -15,7 +15,7 @@
     @include sectionHeader;
   }
   &_content {
-    @include gridDisplay(repeat(auto-fit, minmax(370px, 1fr)));
+    @include gridDisplay(repeat(auto-fit, minmax(300px, 1fr)));
     grid-gap: 20px;
 
     &_item {

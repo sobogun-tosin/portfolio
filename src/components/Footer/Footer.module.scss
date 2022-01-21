@@ -2,20 +2,37 @@
 @import "../../styles/topography";
 
 .Footer {
-  min-height: 250px;
+  min-height: 200px;
   background: linear-gradient(to right, $blue-1, $grey-1);
 
   &_container {
-    @include gridDisplay(1fr 2fr 1fr);
-    align-items: stretch;
+    @include gridDisplay(1fr 2fr);
     width: 80%;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   &_brand {
-    font-size: 80px;
+    font-size: 60px;
     font-family: "Permanent Marker", cursive;
-    cursor: pointer;
+  }
+
+  &_links {
+    &_item {
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+      font-size: 30px;
+    }
+  }
+
+  &_copyright {
+    text-align: center;
+    padding: 10px 0;
+
+    & > p {
+      font-weight: 600;
+      letter-spacing: 1.2px;
+    }
   }
 }

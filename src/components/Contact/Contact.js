@@ -93,11 +93,7 @@ const Contact = ({ id }) => {
             );
           }}
         </Formik>
-        <img
-          src={contactImg}
-          alt="contact image"
-          className={styles.Contact_img}
-        />
+        <img src={contactImg} alt="contact" className={styles.Contact_img} />
       </div>
     </div>
   );
