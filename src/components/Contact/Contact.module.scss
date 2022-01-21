@@ -1,0 +1,67 @@
+@import "../../styles/topography";
+@import "../../styles/colors";
+
+.Contact {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  &_header {
+    @include sectionHeader;
+  }
+
+  &_content {
+    @include flexDisplay(space-between);
+  }
+
+  &_form {
+    width: 40%;
+
+    &_row {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      & > label {
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        opacity: 75%;
+      }
+    }
+
+    &_input {
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      padding: 10px;
+      border: 1px solid $grey-1;
+      border-radius: 6px;
+      margin-top: 7px;
+
+      &:focus {
+        background: rgba($blue-1, 0.3);
+        border-color: $blue-2;
+      }
+    }
+
+    &_error {
+      margin: 2px 5px;
+      font-size: 13px;
+      color: $error-1;
+    }
+
+    & > button {
+      margin-top: 32px;
+      font-size: 1rem;
+      letter-spacing: 1.3px;
+    }
+  }
+
+  &_img {
+    width: 50%;
+    opacity: 70%;
+    border: 1px solid rgba($blue-1, 0.3);
+    border-radius: 6px;
+  }
+}
