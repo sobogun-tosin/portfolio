@@ -17,10 +17,11 @@
 
   &_tab {
     &_header {
-      @include gridDisplay(repeat(auto-fit, minmax(300px, 1fr)));
+      @include gridDisplay(repeat(auto-fit, minmax(200px, 1fr)));
     }
 
     &_item {
+      @include flexDisplay(center);
       border-radius: 8px;
       cursor: pointer;
       padding: 14px 32px;

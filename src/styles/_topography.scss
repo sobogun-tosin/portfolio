@@ -60,6 +60,7 @@
 @mixin sectionHeader {
   @include flexDisplay(center);
   flex-direction: column;
+  letter-spacing: 1.3px;
 
   & > h3 {
     padding: 10px;

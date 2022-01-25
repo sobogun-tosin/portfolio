@@ -15,9 +15,12 @@
     align-items: stretch;
 
     &_description {
-      width: 90%;
-      letter-spacing: 1.25px;
-      font-size: 18px;
+      width: 80%;
+      letter-spacing: 1.2px;
+      line-height: 26px;
+      font-size: 16px;
+      opacity: 70%;
+      font-family: monospace;
     }
   }
 

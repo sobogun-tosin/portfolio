@@ -11,12 +11,8 @@ const About = ({ id }) => {
       </div>
       <div className={styles.About_content}>
         <p className={styles.About_content_description}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          hic quasi, perferendis vitae expedita, voluptates temporibus
-          reiciendis sunt excepturi quo ratione libero nulla nemo rem obcaecati
-          est soluta nihil ducimus quibusdam voluptas similique et illum! Itaque
-          magnam eius quasi quibusdam facere veritatis mollitia sapiente
-          incidunt aut? Adipisci accusamus voluptatibus neque!
+          Hi, my name is Sobogun Tosin. A very committed, motivated and zealous
+          frontend developer.
         </p>
         <div className={styles.About_img_container}>
           <div className={styles.About_img}>

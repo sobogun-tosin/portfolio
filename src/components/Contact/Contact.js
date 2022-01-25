@@ -19,7 +19,7 @@ const Contact = ({ id }) => {
     <div className={styles.Contact} id={id}>
       <div className={styles.Contact_header}>
         <h3>Contact</h3>
-        <p>Reach me from anywhere</p>
+        <p>Get in touch</p>
       </div>
       <div className={styles.Contact_content}>
         <Formik
