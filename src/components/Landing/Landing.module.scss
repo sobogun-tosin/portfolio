@@ -49,8 +49,12 @@
     }
   }
 
-  &_btn {
+  &_links {
+    @include flexDisplay(flex-start);
     margin-top: 10rem;
+  }
+
+  &_btn {
     background: linear-gradient(to right, $blue-2, $blue-3);
     font-size: 1rem;
     font-weight: 600;
@@ -63,6 +67,7 @@
     display: flex;
     align-items: center;
     width: max-content;
+    margin-right: 10px;
 
     &:hover {
       transform: scale(1.05);

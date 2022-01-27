@@ -8,11 +8,11 @@ export const QUALIFICATIONS = [
     contents: [
       {
         name: "Cornerstone college",
-        year: "",
+        year: "2007 - 2010",
       },
       {
         name: "Ogulade college",
-        year: "",
+        year: "2010 - 2013",
       },
       {
         name: "Adekunle Ajasin University",
@@ -30,7 +30,7 @@ export const QUALIFICATIONS = [
       },
       {
         name: "Brass",
-        year: "2021",
+        year: "2021 - present",
       },
     ],
   },

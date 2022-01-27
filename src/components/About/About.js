@@ -11,8 +11,12 @@ const About = ({ id }) => {
       </div>
       <div className={styles.About_content}>
         <p className={styles.About_content_description}>
-          Hi, my name is Sobogun Tosin. A very committed, motivated and zealous
-          frontend developer.
+          Hi, my name is Sobogun Tosin. A very committed, motivated and
+          enthusiastic frontend developer, with the aspiration to learn more and
+          grow not only as a frontend developer. I'm proficient in react
+          framework, understand and can interpret designs, integrating api and
+          ability in optimising web functionalities that improves data retrieval
+          and work efficiency.
         </p>
         <div className={styles.About_img_container}>
           <div className={styles.About_img}>

@@ -38,13 +38,16 @@ const Landing = () => {
                 );
               })}
             </div>
-            <a
-              href="#contact"
-              className={styles.Landing_btn}
-              onClick={handleClick}
-            >
-              Contact me <FiSend />
-            </a>
+            <div className={styles.Landing_links}>
+              <a
+                href="#contact"
+                className={styles.Landing_btn}
+                onClick={handleClick}
+              >
+                Contact me <FiSend />
+              </a>
+              <button className={styles.Landing_btn}>Resume</button>
+            </div>
           </div>
         </div>
         <div className={styles.Landing_imgContainer}>
