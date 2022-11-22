@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Landing.module.scss";
 import { FiSend } from "react-icons/fi";
 import { SOCIAL_LINKS } from "./data";
+import { BsDownload } from "react-icons/bs";
+import Tosin from "../../assets/images/background/tosin.png";
 
 const Landing = () => {
   const handleClick = (e) => {
@@ -41,17 +43,19 @@ const Landing = () => {
             <div className={styles.Landing_links}>
               <a
                 href="#contact"
-                className={styles.Landing_btn}
+                className={styles.Landing_links_btn}
                 onClick={handleClick}
               >
                 Contact me <FiSend />
               </a>
-              <button className={styles.Landing_btn}>Resume</button>
+              <a className={styles.Landing_links_btn}>
+                Resumé <BsDownload />
+              </a>
             </div>
           </div>
         </div>
         <div className={styles.Landing_imgContainer}>
-          <img src="" alt="Hero-img" />
+          <img src={Tosin} alt="Hero-img" />
         </div>
       </div>
     </section>

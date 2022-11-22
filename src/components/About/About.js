@@ -18,8 +18,8 @@ const About = ({ id }) => {
           ability in optimising web functionalities that improves data retrieval
           and work efficiency.
         </p>
-        <div className={styles.About_img_container}>
-          <div className={styles.About_img}>
+        <div className={styles.About_content_container}>
+          <div className={styles.About_content_container_img}>
             <img src={tosin} alt="Tosin" />
           </div>
         </div>

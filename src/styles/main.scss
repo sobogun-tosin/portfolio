@@ -1,5 +1,6 @@
-@import "./topography";
+@import "./typography";
 @import "./colors";
+@import "./breakpoints";
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
@@ -55,6 +56,7 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 button {

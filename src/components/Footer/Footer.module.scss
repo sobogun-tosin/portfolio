@@ -1,15 +1,26 @@
 @import "../../styles/colors";
-@import "../../styles/topography";
+@import "../../styles/typography";
+@import "../../styles/breakpoints";
 
 .Footer {
   min-height: 200px;
   background: linear-gradient(to right, $blue-1, $grey-1);
 
   &_container {
-    @include gridDisplay(1fr 2fr);
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 16px 0;
+
+    @include tb {
+      padding: 3rem 32px 0;
+    }
+
+    @include lm {
+      width: 80%;
+      margin: 0 auto;
+      padding: 3rem 0 0;
+    }
   }
 
   &_brand {

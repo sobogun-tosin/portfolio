@@ -1,4 +1,6 @@
 import statwarImg from "../../assets/images/projects/starwars.png";
+import dictionaryImg from "../../assets/images/projects/dictionary.png";
+import githhubImg from "../../assets/images/projects/githubUser.png";
 
 export const PROJECTS = [
   {
@@ -14,13 +16,13 @@ export const PROJECTS = [
     site_url: "#",
   },
   {
-    avatar: "",
+    avatar: dictionaryImg,
     title: "dictionary",
     git_url: "https://github.com/sobogun-tosin/dictionary",
     site_url: "https://dictionary-thosean.netlify.app/",
   },
   {
-    avatar: "",
+    avatar: githhubImg,
     title: "github users",
     git_url: "https://github.com/sobogun-tosin/github-user-redux",
     site_url: "https://github-users-thosean.netlify.app/",

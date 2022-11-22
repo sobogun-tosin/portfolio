@@ -1,9 +1,9 @@
-@import "../../styles/topography";
+@import "../../styles/typography";
 @import "../../styles//colors";
+@import "../../styles/breakpoints";
 
 .Navbar {
   background: linear-gradient(to right, $blue-1, $grey-1);
-  padding: 20px 0;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -11,8 +11,21 @@
 
   &_container {
     @include flexDisplay(space-between);
-    width: 80%;
-    margin: 0 auto;
+    padding: 20px 16px;
+
+    @include tb {
+      padding: 20px 32px;
+    }
+
+    @include lm {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    @include dm {
+      max-width: 1400px;
+    }
   }
 
   &_brand {
@@ -47,10 +60,10 @@
   &_linkBtn {
     font-size: 32px;
     cursor: pointer;
-    display: none;
+    display: block;
 
-    @media screen and (max-width: 700px) {
-      display: block;
+    @include tb {
+      display: none;
     }
   }
 

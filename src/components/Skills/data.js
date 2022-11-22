@@ -1,3 +1,4 @@
+import { BsGithub } from "react-icons/bs";
 import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiRedux } from "react-icons/si";
@@ -32,5 +33,10 @@ export const SKILLS = [
     title: "Redux",
     value: 70,
     icon: <SiRedux />,
+  },
+  {
+    title: "Git",
+    value: 90,
+    icon: <BsGithub />,
   },
 ];

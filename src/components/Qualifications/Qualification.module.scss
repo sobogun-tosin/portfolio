@@ -1,16 +1,24 @@
-@import "../../styles/topography";
+@import "../../styles/typography";
 @import "../../styles/colors";
+@import "../../styles/breakpoints";
 
 .Qualification {
-  padding: 3rem 0;
-  &_container {
-    width: 50%;
-    margin: 0 auto;
+  padding: 3rem 16px;
 
-    @media screen and (max-width: 700px) {
-      width: 70%;
-    }
+  @include tb {
+    padding: 3rem 32px;
   }
+
+  @include lm {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  @include dm {
+    max-width: 1400px;
+  }
+
   &_header {
     @include sectionHeader;
   }
@@ -18,28 +26,25 @@
   &_tab {
     &_header {
       @include gridDisplay(repeat(auto-fit, minmax(200px, 1fr)));
-    }
+      gap: 20px;
 
-    &_item {
-      @include flexDisplay(center);
-      border-radius: 8px;
-      cursor: pointer;
-      padding: 14px 32px;
-      background: $blue-1;
-      font-weight: 600;
-      font-size: 1rem;
+      &_item {
+        @include flexDisplay(center);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 14px 32px;
+        background: $blue-1;
+        font-weight: 600;
+        font-size: 1rem;
 
-      &:not(:last-of-type) {
-        margin-right: 10px;
+        & > svg {
+          padding-right: 5px;
+        }
+
+        &_active {
+          background: rgba($blue-2, 0.7);
+        }
       }
-
-      & > svg {
-        padding-right: 5px;
-      }
-    }
-
-    &_active {
-      background: $blue-2;
     }
 
     &_content {

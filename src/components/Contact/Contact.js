@@ -28,11 +28,24 @@ const Contact = ({ id }) => {
           validateOnChange
           initialValues={formData}
         >
-          {({ values, errors, touched, handleBlur, handleChange }) => {
+          {({
+            values,
+            errors,
+            touched,
+            handleBlur,
+            handleChange,
+            isValid,
+            dirty,
+          }) => {
             return (
               <Form className={styles.Contact_form}>
                 <div className={styles.Contact_form_row}>
-                  <label htmlFor="name">Name</label>
+                  <label
+                    htmlFor="name"
+                    className={styles.Contact_form_row_label}
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
                     name="name"
@@ -41,14 +54,19 @@ const Contact = ({ id }) => {
                     value={values.name}
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    className={styles.Contact_form_input}
+                    className={styles.Contact_form_row_input}
                   />
                   {touched.name && (
-                    <p className={styles.Contact_form_error}>{errors.name}</p>
+                    <p className={styles.Contact_form_row_error}>
+                      {errors.name}
+                    </p>
                   )}
                 </div>
                 <div className={styles.Contact_form_row}>
-                  <label htmlFor="email" className={styles.Contact_form_label}>
+                  <label
+                    htmlFor="email"
+                    className={styles.Contact_form_row_label}
+                  >
                     Email
                   </label>
                   <input
@@ -59,16 +77,18 @@ const Contact = ({ id }) => {
                     value={values.email}
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    className={styles.Contact_form_input}
+                    className={styles.Contact_form_row_input}
                   />
                   {touched.email && (
-                    <p className={styles.Contact_form_error}>{errors.email}</p>
+                    <p className={styles.Contact_form_row_error}>
+                      {errors.email}
+                    </p>
                   )}
                 </div>
                 <div className={styles.Contact_form_row}>
                   <label
                     htmlFor="message"
-                    className={styles.Contact_form_label}
+                    className={styles.Contact_form_row_label}
                   >
                     Message
                   </label>
@@ -80,15 +100,21 @@ const Contact = ({ id }) => {
                     value={values.message}
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    className={styles.Contact_form_input}
+                    className={styles.Contact_form_row_input}
                   />
                   {touched.message && (
-                    <p className={styles.Contact_form_error}>
+                    <p className={styles.Contact_form_row_error}>
                       {errors.message}
                     </p>
                   )}
                 </div>
-                <button type="submit">Submit</button>
+                <button
+                  type="submit"
+                  disabled={!dirty || !isValid}
+                  className={styles.Contact_form_btn}
+                >
+                  Submit
+                </button>
               </Form>
             );
           }}

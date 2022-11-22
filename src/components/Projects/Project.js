@@ -17,16 +17,16 @@ const Project = ({ id }) => {
                 <img
                   src={avatar}
                   alt="avatar"
-                  className={styles.Project_content_img}
+                  className={styles.Project_content_item_img}
                 />
                 <hr />
-                <p className={styles.Project_content_title}>{title}</p>
-                <div className={styles.Project_content_links}>
+                <p className={styles.Project_content_item_title}>{title}</p>
+                <div className={styles.Project_content_item_links}>
                   <a
                     href={git_url}
                     target="_blank"
                     rel="noreferrer"
-                    className={styles.Project_content_links_btn}
+                    className={styles.Project_content_item_links_btn}
                   >
                     Souce code
                   </a>
@@ -34,7 +34,7 @@ const Project = ({ id }) => {
                     href={site_url}
                     target="_blank"
                     rel="noreferrer"
-                    className={styles.Project_content_links_btn}
+                    className={styles.Project_content_item_links_btn}
                   >
                     Visit site
                   </a>

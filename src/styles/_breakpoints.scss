@@ -1,0 +1,96 @@
+// Mobile screens
+$screen-ms: 320px;
+$screen-mm: 375px;
+$screen-ml: 425px;
+
+// Tablet screen
+$screen-tb: 768px;
+
+// Laptop screens
+$screen-lm: 1024px;
+$screen-ll: 1440px;
+
+// Desktop screen
+$screen-dm: 2560px;
+
+@mixin ms {
+  @media (min-width: $screen-ms) {
+    @content;
+  }
+}
+
+@mixin mm {
+  @media (min-width: $screen-mm) {
+    @content;
+  }
+}
+
+@mixin ml {
+  @media (min-width: $screen-ml) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media (min-width: $screen-tb) {
+    @content;
+  }
+}
+
+@mixin lm {
+  @media (min-width: $screen-lm) {
+    @content;
+  }
+}
+
+@mixin ll {
+  @media (min-width: $screen-ll) {
+    @content;
+  }
+}
+
+@mixin dm {
+  @media (min-width: $screen-dm) {
+    @content;
+  }
+}
+
+@mixin rwd($screen) {
+  @media (min-width: $screen + "px") {
+    @content;
+  }
+}
+
+// ==============Display================
+
+@mixin flexDisplay($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+@mixin gridDisplay($columns) {
+  display: grid;
+  grid-template-columns: $columns;
+  align-items: center;
+}
+
+// ==============Section header================
+@mixin sectionHeader {
+  @include flexDisplay(center);
+  flex-direction: column;
+  letter-spacing: 1.3px;
+
+  & > h3 {
+    padding: 10px;
+    border-bottom: 5px solid $black-2;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  & > p {
+    opacity: 50%;
+    font-weight: 600;
+  }
+}

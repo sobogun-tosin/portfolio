@@ -39,39 +39,3 @@
   line-height: 1.37;
   letter-spacing: -0.09px;
 }
-
-// ==============Display================
-
-@mixin flexDisplay($justify-content) {
-  display: flex;
-  justify-content: $justify-content;
-  align-items: center;
-}
-
-@mixin gridDisplay($columns) {
-  display: grid;
-  grid-template-columns: $columns;
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-// ==============Section header================
-@mixin sectionHeader {
-  @include flexDisplay(center);
-  flex-direction: column;
-  letter-spacing: 1.3px;
-
-  & > h3 {
-    padding: 10px;
-    border-bottom: 5px solid $black-2;
-    border-radius: 4px;
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  & > p {
-    opacity: 50%;
-    font-weight: 600;
-  }
-}
