@@ -29,6 +29,7 @@
     font-size: 1.25rem;
     box-shadow: 1px 1.5px 7px 2.5px $black-1;
     max-height: 25rem;
+    background-color: $grey-2;
     overflow-y: scroll;
     scrollbar-width: none;
 
@@ -38,6 +39,7 @@
 
     &_item {
       margin-bottom: 10px;
+      padding: 12px 0;
 
       &_text {
         @include flexDisplay(space-between);

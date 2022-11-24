@@ -41,8 +41,8 @@
       box-shadow: 1px 1.5px 7px 2.5px rgba($black-1, 0.3);
       border-radius: 8px;
       padding: 16px;
-      // width: 45%;
       overflow: hidden;
+      background-color: $grey-1;
 
       &_img {
         width: 100%;

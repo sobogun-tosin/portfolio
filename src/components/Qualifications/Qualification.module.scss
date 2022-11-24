@@ -42,7 +42,7 @@
         }
 
         &_active {
-          background: rgba($blue-2, 0.7);
+          background: rgba($blue-2, 0.9);
         }
       }
     }
@@ -50,14 +50,22 @@
     &_content {
       margin-top: 2rem;
       height: 350px;
-      padding: 14px 32px;
+      padding: 7px 32px;
       border-radius: 8px;
-      box-shadow: 5px 5px 10px 0 $grey-1;
+      box-shadow: 1px 1.5px 7px 2.5px $black-1;
+      background-color: $grey-2;
+      overflow-y: scroll;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       &_item {
         @include flexDisplay(space-between);
         font-size: 1.25rem;
         font-family: "Eczar", serif;
+        padding: 12px 0;
       }
     }
   }
